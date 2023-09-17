@@ -1,0 +1,30 @@
+[
+  { 
+    "team": "Las Vegas Raiders",
+    "coach": "Josh McDaniels",
+    "stadium": "Allegiant Stadium",
+    "location": "Paradise, NV",
+    "id": 1
+  },
+  { 
+    "team": "Denver Broncos",
+    "coach": "Sean Payton",
+    "stadium": "Mile High Stadium",
+    "location": "Denver, CO",
+    "id": 2
+  },
+  { 
+    "team": "Kansas City Chiefs",
+    "coach": "Andy Reid",
+    "stadium": "Arrowhead Stadium",
+    "location": "Kansas City, MO",
+    "id": 3
+  },
+  { 
+    "team": "Los Angeles Chargers",
+    "coach": "Brandon Staley",
+    "stadium": "Sofi Stadium",
+    "location": "Inglewood, CA",
+    "id": 4
+  }
+]

@@ -5,11 +5,11 @@ export default function Layout( { children, home } ) {
   return (
     <div>
       <Head>
-        <title>Basic Next.js App</title>
+        <title>Jeremy's Next.js App</title>
       </Head>
       <header>
         <nav>
-          <a href="https://www.santarosa.edu">Visit SRJC</a>
+          <a href="https://www.nfl.com">Visit NFL.com</a>
         </nav>
       </header>
       <main>
@@ -17,12 +17,12 @@ export default function Layout( { children, home } ) {
       </main>
       {!home && (
           <Link href="/" className="btn btn-primary mt-3">
-            ← Back to home
+            ← Back to homepage
           </Link>
         )
       }
       <footer>
-        <p>The footer</p>
+        <p>Please don't sue me NFL</p>
       </footer>
     </div>
   );
