@@ -14,9 +14,9 @@ export async function getStaticProps() {
 export default function Home( { allData } ) {
   return (
     <Layout home>
-      <h1>List of NFL Teams in the West</h1>
+      <h1>List of NFL Teams in the NFC West</h1>
       <div className="list-group">
-        {allData.map(
+        {allData && allData.map(
             ({id, team}) => (
               <Link key={id} href={`/${id}`} className="list-group-item list-group-item-action">
                 {team}
