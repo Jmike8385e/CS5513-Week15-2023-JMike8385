@@ -2,24 +2,28 @@
   { 
     "team": "San Francisco 49ers",
     "coach": "Kyle Shanahan",
+    "stadium": "Levi's Stadium",
     "location": "Santa Clara, CA",
     "id": 1
   },
   { 
     "team": "Seattle Seahawks",
     "coach": "Pete Caroll",
+    "stadium": "Lumen Field",
     "location": "Seattle, WA",
     "id": 2
   },
   { 
     "team": "Los Angeles Rams",
     "coach": "Shawn McVay",
+    "stadium": "Sofi Stadium",
     "location": "Inglewood, CA",
     "id": 3
   },
   { 
     "team": "Arizona Cardinals",
     "coach": "Jonathan Gannon",
+    "stadium": "Statefarm Stadium",
     "location": "Glendale, AZ",
     "id": 4
   }

@@ -28,20 +28,10 @@ export default function Entry( { itemData } ) {
     <Layout>
       <article className="card col-6">
         <div className="card-body">
-          <h3 className="card-title">{itemData.team}</h3>
-          <h4 className="card-subtitle mb-2 text-body-secondary">{itemData.coach}</h4>
+          <h5 className="card-title">{itemData.team}</h5>
+          <h6 className="card-subtitle mb-2 text-body-secondary">{itemData.coach}</h6>
+          <p className="card-text">{itemData.stadium}</p>
           <a href="#" className="card-link">{itemData.location}</a>
-          <h5>History of Stadiums</h5>
-          <ol>
-            {itemData.stadiums && itemData.stadiums.map(
-              ({id, stadium}) => (
-                <li key={id} className="list-group-item list-group-item-action">
-                  {stadium}
-                </li>
-                )
-              )
-            }
-          </ol>
         </div>
       </article>
     </Layout>
