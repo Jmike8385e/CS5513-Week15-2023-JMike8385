@@ -1,6 +1,5 @@
 import Layout from '../components/layout';
 import { getAllIds, getData } from '../lib/data';
-import { getStaticPaths } from 'next/dist/next-server/lib/router/utils';
 
 // define a getStaticProps() function to have next.js retrieve data to use for the dynamic page
 // - this name is defined by next.js
@@ -16,7 +15,7 @@ export async function getStaticProps( { params } ) {
 // define a getStaticPaths() function to tell next.js all valid URLs: 1,2,3,4 
 // - this name is defined by next.js
 export async function getStaticPaths() {
-  const paths = getAllIds();
+  const paths = await getAllIds();
   return {
     paths,
     fallback: false
