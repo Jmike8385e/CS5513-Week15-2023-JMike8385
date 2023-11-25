@@ -21,7 +21,7 @@ export async function getStaticProps() {
 export default function Home( { allData, allThingData } ) {
   return (
     <Layout home>
-      <h1>List of NFL Teams in the NFC West</h1>
+      <h1>Week 14 App</h1>
       <div className="list-group">
           {allData.map(({ id, name }) => (
             <Link key={id} href={`/posts/${id}`}>
