@@ -2,9 +2,9 @@
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { getSortedList } from '../lib/data';
-import { getSortedOrderList } from '../lib/dataorders';
-import { getSortedCustomerList } from '../lib/datacustomers';
-import { getSortedProductList } from '../lib/dataproducts';
+import { getSortedOrderList } from '../lib/data-orders';
+import { getSortedCustomerList } from '../lib/data-customers';
+import { getSortedProductList } from '../lib/data-products';
 
 // define a getStaticProps() function - this name is defined by next.js
 export async function getStaticProps() {
@@ -27,6 +27,13 @@ export async function getStaticProps() {
 export default function Home( { allData, allOrderData, allCustomerData, allProductData } ) {
   return (
     <Layout home>
+      <h1>List of Orders</h1>
+        <div className="list-group">
+          {allData.map(({ id, name}) => (
+            <Link className="list-group-item list-group-item-action" key={id} href={`/posts/${id}`}>{name}
+            </Link>
+          ))}
+        </div>
       <h1>List of Orders</h1>
         <div className="list-group">
           {allOrderData.map(({ id, order_title}) => (
