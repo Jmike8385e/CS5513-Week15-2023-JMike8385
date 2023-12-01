@@ -29,13 +29,6 @@ export default function Home( { allData, allOrderData, allCustomerData, allProdu
     <Layout home>
       <h1>List of Orders</h1>
         <div className="list-group">
-          {allData.map(({ id, name}) => (
-            <Link className="list-group-item list-group-item-action" key={id} href={`/posts/${id}`}>{name}
-            </Link>
-          ))}
-        </div>
-      <h1>List of Orders</h1>
-        <div className="list-group">
           {allOrderData.map(({ id, order_title}) => (
             <Link className="list-group-item list-group-item-action" key={id} href={`/orders/${id}`}>{order_title}
             </Link>
