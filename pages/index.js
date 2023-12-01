@@ -1,4 +1,4 @@
-import Head from 'next/head';
+//import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { getSortedList } from '../lib/data';
@@ -29,25 +29,22 @@ export default function Home( { allData, allOrderData, allCustomerData, allProdu
     <Layout home>
       <h1>List of Orders</h1>
         <div className="list-group">
-          {allOrderData.map(({ id, order_title }) => (
-            <Link legacyBehavior key={id} href={`/orders/${id}`}>
-              <a className="list-group-item list-group-item-action">{order_title}</a>
+          {allOrderData.map(({ id, order_title}) => (
+            <Link className="list-group-item list-group-item-action" key={id} href={`/orders/${id}`}>{order_title}
             </Link>
           ))}
         </div>
       <h1>List of Customers</h1>
         <div className="list-group">
           {allCustomerData.map(({ id, name}) => (
-            <Link legacyBehavior key={id} href={`/customers/${id}`}>
-              <a className="list-group-item list-group-item-action">{name}</a>
+            <Link className="list-group-item list-group-item-action" key={id} href={`/customers/${id}`}>{name}
             </Link>
           ))}
         </div>
       <h1>List of Products</h1>
         <div className="list-group">
           {allProductData.map(({ id, name}) => (
-            <Link legacyBehavior key={id} href={`/products/${id}`}>
-              <a className="list-group-item list-group-item-action">{name}</a>
+            <Link className="list-group-item list-group-item-action" key={id} href={`/products/${id}`}>{name}
             </Link>
           ))}
         </div>

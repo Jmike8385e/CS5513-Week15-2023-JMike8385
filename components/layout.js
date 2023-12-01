@@ -18,8 +18,7 @@ export default function Layout( { children, home } ) {
         {children}
       </main>
       {!home && (
-          <Link legacyBehavior href="/">
-            <a className="btn btn-primary mt-3">← Back to home</a>
+          <Link href="/" className="btn btn-primary mt-3">← Back to home
           </Link>
         )
       }
