@@ -9,9 +9,9 @@ export default function Layout( { children, home } ) {
       </Head>
       <header>
         <nav>
-          <a className="btn btn-primary mt-3" href="/orders/">Orders</a>
-          <a className="btn btn-primary mt-3" href="/customers/">Customers</a>
-          <a className="btn btn-primary mt-3" href="/products/">Products</a>
+          <Link className="btn btn-primary mt-3" href="/orders/">Orders</Link>
+          <Link className="btn btn-primary mt-3" href="/customers/">Customers</Link>
+          <Link className="btn btn-primary mt-3" href="/products/">Products</Link>
         </nav>
       </header>
       <main>
